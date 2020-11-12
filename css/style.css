@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap");
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px; }
+
+.testimonials {
+  margin: 0 auto; }
+  .testimonials .grid-container {
+    display: grid;
+    grid-gap: 2% 2%;
+    max-width: 100%;
+    background-color: #ecf2f8;
+    padding: 5%; }
+    .testimonials .grid-container .area {
+      border-radius: 3%;
+      padding: 5%; }
+      .testimonials .grid-container .area__image {
+        max-width: 5vw;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 1%; }
+        .testimonials .grid-container .area__image img {
+          border-radius: 50%; }
+      .testimonials .grid-container .area__text {
+        display: inline-block;
+        vertical-align: top; }
+        .testimonials .grid-container .area__text h1 {
+          margin-top: 0;
+          margin-bottom: 0; }
+        .testimonials .grid-container .area__text p {
+          margin-top: 0;
+          margin-bottom: 0; }
+    .testimonials .grid-container .Area-1 {
+      grid-area: Area-1;
+      background-image: url("images/bg-pattern-quotation.svg");
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-color: #7541c8;
+      color: white; }
+    .testimonials .grid-container .Area-2 {
+      grid-area: Area-2;
+      background-color: #48556a;
+      color: white; }
+    .testimonials .grid-container .Area-3 {
+      grid-area: Area-3;
+      background-color: white; }
+    .testimonials .grid-container .Area-4 {
+      grid-area: Area-4;
+      background-color: white; }
+    .testimonials .grid-container .Area-5 {
+      grid-area: Area-5;
+      background-color: #19212e;
+      color: white; }
+    @media (min-width: 1440px) {
+      .testimonials .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        padding-left: 10%;
+        padding-right: 10%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "Area-1 Area-1 Area-2 Area-3" "Area-4 Area-5 Area-5 Area-3" ". . . ."; } }

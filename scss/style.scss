@@ -1,0 +1,98 @@
+@import "basics.scss";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+}
+
+.testimonials {
+    
+    margin: 0 auto;
+    
+
+    .grid-container {
+      
+      display: grid; 
+      grid-gap: 2% 2%;
+      //max-width: 1440px;
+     max-width: 100%;
+     background-color: $lightGrayishBlue;
+     padding: 5%; 
+
+      .area  {
+        border-radius: 3%; 
+        padding: 5%;
+        //float: left;
+
+        &__image {
+          max-width: 5vw;
+          display: inline-block;
+          vertical-align: top; 
+          margin-right: 1%;
+         
+          img {
+            border-radius: 50%;
+          }
+        }
+         &__text {
+            
+            display: inline-block;
+            vertical-align: top;
+            h1 {
+              margin-top: 0;
+              margin-bottom: 0;
+            }
+            p {
+              margin-top: 0;
+              margin-bottom: 0;
+            }
+          }
+      }
+
+      .Area-1 { 
+        grid-area: Area-1;
+        background-image: url('images/bg-pattern-quotation.svg'); 
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-color: $violet;
+        color: $white;
+      }  
+    
+      .Area-2 { 
+        grid-area: Area-2;
+        background-color: $darkGrayishBlue;
+        color: $white;
+       }
+      .Area-3 { 
+        grid-area: Area-3; 
+        background-color: $white;
+        
+      }
+      .Area-4 { 
+        grid-area: Area-4; 
+        background-color: $white;
+      }
+      .Area-5 { 
+        grid-area: Area-5; 
+        background-color: $darkBlackishBlue;
+        color: $white;
+      } 
+
+      @media (min-width: 1440px) {
+        //grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+
+        padding-left: 10%;
+        padding-right: 10%; 
+
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+          "Area-1 Area-1 Area-2 Area-3"
+          "Area-4 Area-5 Area-5 Area-3"
+          ". . . .";
+        } 
+  }
+  
+
+}

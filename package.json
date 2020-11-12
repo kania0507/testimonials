@@ -1,0 +1,16 @@
+{
+  "name": "testimonials",
+  "version": "1.0.0",
+  "description": "![Design preview for the Testimonials grid section coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass scss/style.scss css/style.css"
+    
+  },
+  "author": "AKC",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6"
+  }
+}
