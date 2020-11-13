@@ -7,29 +7,29 @@ body {
 }
 
 .testimonials {
-    
+    //width: 100vw;
     margin: 0 auto;
-    
 
     .grid-container {
-      
-      display: grid; 
-      grid-gap: 2% 2%;
-      //max-width: 1440px;
+      display: block;
+
      max-width: 100%;
+     
      background-color: $lightGrayishBlue;
      padding: 5%; 
 
       .area  {
-        border-radius: 3%; 
-        padding: 5%;
-        //float: left;
+        min-height: 10vh;
+        border-radius: 1em;
+        padding: 5%; 
+        margin-bottom: 1em;
 
+       
         &__image {
-          max-width: 5vw;
+          max-width: 4vw;
           display: inline-block;
           vertical-align: top; 
-          margin-right: 1%;
+          margin-right: 2%;
          
           img {
             border-radius: 50%;
@@ -40,23 +40,54 @@ body {
             display: inline-block;
             vertical-align: top;
             h1 {
+              font-size: 1.2em;
               margin-top: 0;
               margin-bottom: 0;
             }
             p {
               margin-top: 0;
               margin-bottom: 0;
+              
+            }
+          }
+          .shortm {
+            font-size: 1.5em;
+          }
+
+          &__light {
+            .area__text {
+              p {
+                color: $semiblack;
+              }
+              
+            }
+            .longm {
+              color: $hisemiblack;
+            }
+          }
+
+          &__dark {
+            .area__text {
+              p {
+                color: $semiwhite;
+              }
+              
+            }
+            .longm {
+              color: $hisemiwhite;
             }
           }
       }
 
       .Area-1 { 
         grid-area: Area-1;
-        background-image: url('images/bg-pattern-quotation.svg'); 
-        background-position: top right;
+        background-image: url('../images/bg-pattern-quotation.svg'); 
+        background-position:  75% top;
         background-repeat: no-repeat;
         background-color: $violet;
         color: $white;
+
+        
       }  
     
       .Area-2 { 
@@ -80,6 +111,10 @@ body {
       } 
 
       @media (min-width: 1440px) {
+        display: grid;
+        grid-gap: 2em;
+        
+        
         //grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: repeat(4, 1fr);
 
@@ -91,7 +126,17 @@ body {
           "Area-1 Area-1 Area-2 Area-3"
           "Area-4 Area-5 Area-5 Area-3"
           ". . . .";
+
+
+          .area  {
+            &__image {
+              //max-width: 4vw;
+             
+              margin-right: 4%;
+            }
+          }
         } 
+        
   }
   
 
