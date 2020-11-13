@@ -4,6 +4,7 @@
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 13px;
+  font-weight: 500;
 }
 
 .testimonials {
@@ -26,13 +27,14 @@ body {
 
        
         &__image {
-          max-width: 4vw;
+          max-width: 3vw;
           display: inline-block;
           vertical-align: top; 
           margin-right: 2%;
          
           img {
             border-radius: 50%;
+            border: 1px solid $violet;
           }
         }
          &__text {
@@ -52,6 +54,7 @@ body {
           }
           .shortm {
             font-size: 1.5em;
+            font-weight: 600;
           }
 
           &__light {
@@ -110,7 +113,7 @@ body {
         color: $white;
       } 
 
-      @media (min-width: 1440px) {
+      @media (min-width: 110.77em) {
         display: grid;
         grid-gap: 2em;
         
