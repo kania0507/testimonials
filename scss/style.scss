@@ -38,7 +38,6 @@ body {
           }
         }
          &__text {
-            
             display: inline-block;
             vertical-align: top;
             h1 {
@@ -62,7 +61,6 @@ body {
               p {
                 color: $semiblack;
               }
-              
             }
             .longm {
               color: $hisemiblack;
@@ -74,7 +72,6 @@ body {
               p {
                 color: $semiwhite;
               }
-              
             }
             .longm {
               color: $hisemiwhite;
@@ -89,8 +86,6 @@ body {
         background-repeat: no-repeat;
         background-color: $violet;
         color: $white;
-
-        
       }  
     
       .Area-2 { 
@@ -129,7 +124,6 @@ body {
           "Area-1 Area-1 Area-2 Area-3"
           "Area-4 Area-5 Area-5 Area-3"
           ". . . .";
-
 
           .area  {
             &__image {
